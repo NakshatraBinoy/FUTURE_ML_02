@@ -1,14 +1,19 @@
-# Task 2: Support Ticket Classification System
+# Task 2: Smart IT Service Desk Classifier
 
 ## Project Overview
-This project focuses on building an automated Natural Language Processing (NLP) pipeline designed to ingest customer support text, accurately classify it into departmental categories, and dynamically assign priority tags (High, Medium, Low).
+This repository hosts a production-grade Natural Language Processing (NLP) pipeline built to automate ticket sorting within an enterprise IT Asset & Technical Service Desk environment. By translating raw incoming service logs into intent categories and assigning distinct severity levels, the system optimizes queue routing and prioritizes business-critical system drops.
 
 ## Key Features
-* **Text Preprocessing:** Leveraged TF-IDF Vectorization to filter out common stop words and mathematically weigh critical technical/billing terminology.
-* **Multi-Target Analytics:** Trained separate Naive Bayes classification heads on the same text embeddings to simultaneously predict ticket domain and urgency levels.
-* **Evaluation Metrics:** Evaluated performance utilizing classification reports detailing precision, recall, and F1-scores.
+* **Distinct Asset Theme**: Customized data structure specifically modeled around infrastructure incidents (e.g., Network & Access drops, Hardware Failures, Software Crashes).
+* **NLP Pipeline & Feature Extraction**: Integrates TF-IDF (Term Frequency-Inverse Document Frequency) text vectorization to tokenize and evaluate technical logs.
+* **Logistic Regression Architecture**: Trains a multi-class predictive model to analyze incoming descriptions and instantly map routing destinations.
+* **Advanced Evaluation Analytics**: Evaluates operational precision using structural confusion matrices rendered through unique color tracking palettes (`Greens`).
+* **Live Operational Verification**: Features an integrated end-to-end routing check simulating inference validation on complex real-time strings.
 
-## Skills Gained
-* Text preprocessing & tokenization.
-* Natural Language Processing (NLP) classification
-* Support analytics and multi-output routing logic
+## Tech Stack
+* **Language**: Python
+* **Libraries**: Scikit-Learn, Pandas, NumPy, Seaborn, Matplotlib
+
+## How to Run
+1. Load the Jupyter Notebook environment into Google Colab.
+2. Run all execution paths to display the customized horizontal category split plots, severity volume structures, and the classification routing report.
